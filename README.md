@@ -59,6 +59,105 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 
+# Laravel API Project
+
+##  Overview
+This is a backend API project built using **Laravel**.  
+The application provides stable and secure APIs with proper validation,
+exception handling, and structured responses.
+
+The repository includes:
+- Database backup SQL file for easy setup
+- Postman collection for API documentation and testing
+- Clear setup instructions for local environment
+
+---
+
+##  Tech Stack
+- PHP 
+- Laravel Framework
+- MySQL
+- Composer
+- Postman (for API testing)
+
+---
+
+##  Requirements
+Ensure the following are installed on your system:
+
+- PHP 
+- Composer
+- MySQL 
+- Apache / Nginx (or Laravel built-in server)
+- Postman
+
+---
+
+##  Project Setup Instructions
+
+### 1️ Clone the Repository
+```bash
+git clone https://github.com/Muqsit-Qureshi/project.git
+cd project
+
 ## API Documentation
 Import the Postman collection from:
 postman/api_collection.json
+
+2️ Install Dependencies
+composer install
+
+3️ Environment Configuration
+
+Copy the environment example file:
+
+cp .env.example .env
+
+
+Update database credentials in .env:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=project
+DB_USERNAME=root
+DB_PASSWORD=
+
+
+ Important:
+The .env file is intentionally not committed to GitHub for security reasons.
+
+4️ Application Key Generation
+php artisan key:generate
+
+Create a MySQL database named:
+
+project
+
+
+Import the SQL backup file located in the sql folder:
+
+sql/db_backup.sql
+
+
+Using command line:
+
+mysql -u root -p project < sql/db_backup.sql
+
+
+Or import using phpMyAdmin.
+
+6️ Run the Application
+php artisan serve
+
+
+The application will be available at:
+
+http://127.0.0.1:8000
+
+ Web Application Admin Login
+
+Use the following credentials to access the admin panel / web application:
+
+Email:    admin@example.com
+Password: admin123
