@@ -1,0 +1,187 @@
+{
+  "info": {
+    "_postman_id": "cb4807f4-2fa4-4a2d-92e5-3e8e369108a8",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "25840289"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/product",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "product"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "product_id",
+              "value": "2",
+              "type": "text",
+              "uuid": "c96b5f49-70d6-40ae-bffa-f6b23a43a1c8"
+            },
+            {
+              "key": "quantity",
+              "value": "7",
+              "type": "text",
+              "uuid": "cc485669-993d-4444-acd1-46a552fefa49"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/cart/add",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "cart",
+            "add"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/cart",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "cart"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "cart_item_id",
+              "value": "2",
+              "type": "text",
+              "uuid": "8507472a-a982-42fb-a745-be338ce41ac5"
+            },
+            {
+              "key": "quantity",
+              "value": "9",
+              "type": "text",
+              "uuid": "215b44c9-b5e4-47d9-88ba-7b7a66f03f62"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/cart/update",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "cart",
+            "update"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "cart_item_id",
+              "value": "2",
+              "type": "text",
+              "uuid": "5bf0a905-f3bc-4243-b428-04726ac5373f"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/checkout",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "checkout"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
